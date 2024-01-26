@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Instagram feed 2.0</title>
+</head>
+
+<body>
+  <section class="container">
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+
+        <!-- Barra de arriba derecha -->
+
+        <div>
+          <a class="navbar-brand" href="#">
+            <img src="https://img.freepik.com/vector-premium/logotipo-redes-sociales-contorno-negro_197792-2416.jpg"
+              alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+            instagram
+          </a>
+        </div>
+
+        <!-- barra de arriba izquierda       -->
+
+        <div class="d-flex gap-3">
+          <div class="d-flex p2">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Create a new post
+            </button>
+            <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Create a new post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+
+                  <div class="modal-body">
+                    <p>Caption:</p>
+                    <textarea class="form-control" id="staticBackdroptext" rows="3" cols="90"
+                      placeholder="Add the caption of your post here"></textarea>
+
+                    <div class="d-flex mt-3">
+                      <button type="button" class="btn btn-light border rounded btn-sm"> <img
+                          src="https://cdn-icons-png.flaticon.com/512/56/56887.png" width="25" height="25"> </button>
+                      <button type="button" class="btn btn-light border rounded btn-sm mx-2"> <img
+                          src="https://static.vecteezy.com/system/resources/previews/000/362/767/non_2x/location-vector-icon.jpg"
+                          width="25" height="25"> </button>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Publish</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <li class="nav-item dropdown btn btn-secondary">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                aria-expanded="false">
+                <img src="https://images.emojiterra.com/google/android-11/512px/2699.png" width="20px" height="20px">
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">
+                    <p class="text-danger">Log out</p>
+                  </a></li>
+              </ul>
+            </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- botones de las pestañas  -->
+
+    <nav class="d-flex justify-content-center">
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
+          role="tab" aria-controls="nav-home" aria-selected="true"><img
+            src="https://cdn-icons-png.flaticon.com/512/59/59628.png" width="20px" height="20px"></button>
+        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
+          role="tab" aria-controls="nav-profile" aria-selected="false"><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEUEBcExZ5NlAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC"
+            width="20px" height="20px"></button>
+      </div>
+    </nav>
+
+
+    <div class="tab-content" id="nav-tabContent">
+
+      <!-- esta es la primera pestaña      -->
+
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+
+        <div class="row">
+          <div class="col-4 mt-3">
+            <img src="https://www.gataweb.com/fotos/03-12-13-17-30-38.jpg" class="w-100" alt="gato">
+          </div>
+          <div class="col-4 mt-3">
+            <img src="https://i.pinimg.com/474x/34/b5/96/34b596f60fff4fcb7c7f5bba46f74c84.jpg" class="w-100"
+              alt="paisaje de playa">
+          </div>
+          <div class="col-4 mt-3">
+            <img src="https://www.capricare.es/wp-content/uploads/sites/7/2020/05/ibi_madrid-t.jpg" class="w-100"
+              alt="familia">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4 mt-3">
+            <img src="https://es.habcdn.com/files/dynamic_content/campo-de-cesped-natural-2406100_gallery.jpg"
+              class="w-100" alt="campo de futbol">
+          </div>
+          <div class="col-4 mt-3">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-400x400/0b/27/a5/99.jpg" class="w-100"
+              alt="monumento">
+          </div>
+          <div class="col-4 mt-3">
+            <img src="https://www.esneca.lat/wp-content/uploads/maestria-programacion-informatica.jpg" class="w-100"
+              alt="programacion">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4 mt-3">
+            <img src="https://www.asajacyl.com/leon/wp-content/uploads/sites/6/2017/11/LOBO.jpg" class="w-100"
+              alt="lobo">
+          </div>
+          <div class="col-4 mt-3">
+            <img
+              src="https://pyxis.nymag.com/v1/imgs/951/24e/2df97c835f4fcae13e0bfe86dc9950fb2d-02-big-bang-theory.rsquare.w400.jpg"
+              class="w-100" alt="serie de television">
+          </div>
+          <div class="col-4 mt-3">
+            <img src="https://boleramayorca.com/wp-content/uploads/2022/11/10-galeria-Bolera-Mayorca.png" class="w-100"
+              alt="jugando a los bolos">
+          </div>
+        </div>
+      </div>
+
+      <!-- esta es la segunda pestaña      -->
+
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+
+        <nav class="d-flex justify-content-center mt-3">
+          <div class="card w-70" >
+            <div class="d-flex justify-content-between">
+              <p class="w-50 mt-1">Sam el gato</p>
+              <span class="w-55 mt-1">04/02</span>
+            </div>
+            <img src="https://www.gataweb.com/fotos/03-12-13-17-30-38.jpg" class="card-img-top mt-1" alt="gato">
+            <div class="card-body">
+              <p class="card-text"><b>203 likes</b><br>Esta es la foto de un gato tomando el sol</p>
+            </div>
+          </div>
+        </nav>
+
+        <nav class="d-flex justify-content-center mt-3">
+          <div class="card w-70" >
+            <div class="d-flex justify-content-between">
+              <p class="w-50 mt-1">The big bang theory</p>
+              <span class="w-55 mt-1">09/05</span>
+            </div>
+            <img
+              src="https://pyxis.nymag.com/v1/imgs/951/24e/2df97c835f4fcae13e0bfe86dc9950fb2d-02-big-bang-theory.rsquare.w400.jpg"
+              class="card-img-top mt-1" alt="serie de television">
+            <div class="card-body">
+              <p class="card-text"><b>433 likes</b><br>Viendo esta serie en el sofá</p>
+            </div>
+          </div>
+
+        </nav>
+        <nav class="d-flex justify-content-center mt-3">
+          <div class="card w-70" >
+            <div class="d-flex justify-content-between">
+              <p class="w-50 mt-1">Campo alto</p>
+              <span class="w-55 mt-1">09/12</span>
+            </div>
+            <img src="https://es.habcdn.com/files/dynamic_content/campo-de-cesped-natural-2406100_gallery.jpg"
+              class="card-img-top mt-1" alt="campo de futbol">
+            <div class="card-body">
+              <p class="card-text"><b>213 likes</b><br>fin de semana de futbol</p>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+</html>
